@@ -12,6 +12,7 @@ const operator = prompt('Enter operator ( either +, -, * or / ): ');
 const number1 = parseFloat(prompt('Enter first number: '));
 const number2 = parseFloat(prompt('Enter second number: '));
 
+if(number1 && number2){
 switch(operator) {
     case '+':
          result = number1 + number2;
@@ -36,4 +37,5 @@ switch(operator) {
     default:
         console.log('Invalid operator');
         break;
+}
 }
